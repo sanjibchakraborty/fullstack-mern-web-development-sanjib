@@ -140,13 +140,97 @@
       </div>
     </div>
 
-    <!--Link tag (anchor)-->
+    <!--Link tags-->
     <div>
-      <h2>Link Tag (will open in the same window)</h2>
-      <a href="https://www.google.com">Go to google</a>
+      <h2>Link Tags</h2>
 
-      <h2>Link Tag (will open in a separate window)</h2>
-      <a target="_blank" href="https://www.google.com">Go to google</a>
+      <!--Link tag to open a link in the same window-->
+      <div>
+        <a href="https://www.google.com">Go to google</a>
+      </div>
+
+      <!--Link tag to open a link in a separate window-->
+      <div>
+        <a target="_blank" href="https://www.apple.com">Go to Apple</a>
+      </div>
+
+      <!--Link tag to open a file-->
+      <div>
+        <a target="_blank" href="./sample.pdf">Open PDF</a>
+      </div>
+
+      <!--Link tag to download a file-->
+      <div>
+        <a download href="./sample.pdf">Download PDF for free</a>
+      </div>
+
+      <!--Link tag to open email app-->
+      <div>
+        <a href="mailto:support@ymedialabs.com">Send Email</a>
+      </div>
+
+      <!--Link tag to make a call-->
+      <div>
+        <a href="tel:+8088087459">Contact us</a>
+      </div>
     </div>
+
+    <!--Self closing tags-->
+    <div>
+      <h2>Self closing tags</h2>
+
+      <!--Horizontal line using 'hr' tag-->
+      <h3>Horizontal line below using 'hr' tag</h3>
+      <hr />
+
+      <!--Line break using 'br' tag-->
+      <h3>Line break in between 'Home' and 'About' using 'br' tag</h3>
+      <a href="#">Home</a>
+      <br />
+      <br />
+      <a href="#">About</a>
+      <hr />
+      <!--img-->
+      <!--input-- />
+      <!--link-->
+      <!--meta-->
+    </div>
+    <!--Img tag-->
+    <div>
+      <h2>Img tag</h2>
+
+      <!--Load image from local-->
+      <h3>Local Image</h3>
+      <img alt="Background image for home page" src="./images/burger.jpg" />
+
+      <!--Load image from URL-->
+      <h3>Image from URL</h3>
+      <img
+        alt="Background image for home page"
+        src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg"
+        width="640px"
+        height="480px"
+      />
+    </div>
+
+    <!--Picture tag-->
+    <!-- <div>
+      <h2>Picture tag</h2>
+      <h3>Image using picture tag</h3>
+      <picture>
+        <source
+          srcset="
+            https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg
+          "
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="
+            https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg
+          "
+          media="(max-width: 1080px)"
+        />
+      </picture>
+    </div> -->
   </body>
 </html>
