@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Input Attributes</title>
+  </head>
+  <body>
+    <h1>Form Input Attributes</h1>
+    <!--Form Input Attributes-->
+    <form>
+      <div>
+        <label>FirstName</label>
+        <input type="text" name="txtFirstName" required />
+      </div>
+      <br />
+
+      <div>
+        <label>LastName</label>
+        <input type="text" name="txtLastName" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Age</label>
+        <input type="number" name="txtAge" value="18" min="18" max="40" />
+      </div>
+      <br />
+
+      <div>
+        <label>Email</label>
+        <input type="email" name="txtEmail" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Phone</label>
+        <input type="tel" name="txtPhone" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Password</label>
+        <input type="password" name="txtPassword" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Confirm Password</label>
+        <input type="password" name="txtConfirmPassword" required />
+      </div>
+      <br />
+
+      <div>
+        <label>Preferred Color</label>
+        <input type="color" />
+      </div>
+      <br />
+
+      <div>
+        <label>Date of Joining</label>
+        <input type="date" />
+      </div>
+      <br />
+
+      <div>
+        <label>T-Shirt Size</label>
+        <input type="number" value="28" min="28" , max="46" step="2" />
+      </div>
+      <br />
+
+      <div>
+        <label>Upload your Aadhar Card</label>
+        <input type="file" />
+      </div>
+      <br />
+
+      <div>
+        <label>Favorite programming Language</label>
+        <br />
+
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label>HTML</label>
+        <br />
+
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label>CSS</label>
+        <br />
+
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label>JavaScript</label>
+      </div>
+      <br />
+
+      <div>
+        <input type="checkbox" required />
+        <label>I agree to the terms and condition</label>
+      </div>
+      <br />
+
+      <button type="submit" name="btnSubmit">Submit</button>
+      <button type="reset" name="btnReset">Reset</button>
+    </form>
+  </body>
+</html>
