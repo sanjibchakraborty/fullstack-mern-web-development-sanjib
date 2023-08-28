@@ -1,0 +1,15 @@
+h2 {
+  color: red;
+}
+
+p {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+div {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
