@@ -1,0 +1,16 @@
+button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  scale: 120%;
+}
+
+button:active {
+  background-color: green;
+  scale: 130%;
+}
+
+input:focus {
+  background-color: green;
+  color: white;
+}

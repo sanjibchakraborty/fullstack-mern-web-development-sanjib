@@ -1,0 +1,29 @@
+h1::first-line {
+  color: red;
+  font-size: 30px;
+  text-decoration: dashed;
+  background-color: pink;
+  letter-spacing: 6px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+h3::first-letter {
+  color: red;
+  font-size: 90px;
+  text-decoration: dashed;
+  letter-spacing: 6px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.container p::first-letter {
+  color: rgb(255, 0, 166);
+  font-size: 100px;
+}
+
+h3::before {
+  content: "  How are you? -";
+}
+h3::after {
+  content: " The best coding school";
+}
