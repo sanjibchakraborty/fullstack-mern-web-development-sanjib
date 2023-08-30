@@ -1,0 +1,13 @@
+.hex {
+  color: #999999;
+  background-color: #d10bd1;
+}
+
+.rgb {
+  color: rgb(0, 53, 102);
+}
+
+.rgba {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(251, 84, 7, 0.544);
+}

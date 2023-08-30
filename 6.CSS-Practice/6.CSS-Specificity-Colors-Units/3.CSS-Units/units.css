@@ -1,0 +1,45 @@
+.px {
+  font-size: 89px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.percentage-parent {
+  border: 1px solid red;
+  width: 500px;
+}
+
+.percentage-child {
+  border: 1px solid green;
+  width: 50%;
+}
+
+.rem-parent {
+  font-size: 2rem;
+}
+
+.rem-child {
+  font-size: 2rem;
+}
+
+.em-parent {
+  font-size: 2em;
+}
+
+.em-child {
+  font-size: 4em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: red;
+  color: white;
+  height: 25vh;
+}
