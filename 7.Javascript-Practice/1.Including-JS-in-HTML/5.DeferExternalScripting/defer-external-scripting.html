@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Defer External Scripting</title>
+    <!--
+        "Defer External Scripting. 
+        Including External Javascript file inside 'head' tag 
+        and using 'script' tag along with 'defer' attribute."
+    -->
+    <script src="./defer-external-scripting.js" defer></script>
+  </head>
+  <body>
+    <h1>Defer External Scripting</h1>
+    <hr />
+    <h3>
+      Including external Javascript file inside 'head' tag using 'script' tag
+      along with 'defer' attribute.
+    </h3>
+    <p>
+      The <b>defer</b> attribute tells the browser not to wait for the script.
+      Instead, the browser will continue to process the HTML, build DOM. The
+      script loads “in the background”, and then runs when the DOM is fully
+      built.
+    </p>
+    <p>Scripts with <b>defer</b> never block the page.</p>
+    <p>
+      Scripts with <b>defer</b> always execute when the DOM is ready (but before
+      <span style="background-color: lightgray">DOMContentLoaded</span> event)
+    </p>
+    <p>The page content shows up immediately.</p>
+    <p>
+      <span style="background-color: lightgray">DOMContentLoaded</span> event
+      handler waits for the deferred script. It only triggers when the script is
+      downloaded and executed.
+    </p>
+    <img width="700px" src="defer-external-scripting.png" alt="" />
+  </body>
+</html>
