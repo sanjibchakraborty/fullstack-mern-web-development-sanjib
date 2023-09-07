@@ -9,14 +9,16 @@ const batteryDisChargingTime = document.querySelector(
 
 const battery = () => {
   if ("getBattery" in navigator) {
-    navigator.getBattery().then(battery => {
+    navigator.getBattery().then((battery) => {
       function updateAllBatteryDetails() {
         updateChrgingInfo();
         updateLevelChange();
         updateDischargingTimeInfo();
         updateChargingTimeChangeInfo();
       }
+
       updateAllBatteryDetails();
+
       //Battery Charging change
       battery.addEventListener("chargingchange", () => {
         updateChrgingInfo();
@@ -34,6 +36,7 @@ const battery = () => {
         console.log(battery.chargingTime);
         batteryChargingTime.innerHTML = battery.chargingTime + " seconds";
       }
+
       //Battery Discharging time
       battery.addEventListener("dischargingtimechange", () => {
         updateDischargingTimeInfo();
@@ -41,16 +44,15 @@ const battery = () => {
       function updateDischargingTimeInfo() {
         batteryDisChargingTime.innerHTML = battery.dischargingTime + " seconds";
       }
+
       //Battery level change
       battery.addEventListener("levelchange", () => {
         updateLevelChange();
       });
-
       function updateLevelChange() {
         const level = battery.level * 100 + "%";
         batteryLevel.innerHTML = level;
       }
-      //Battery status
     });
   }
 };
