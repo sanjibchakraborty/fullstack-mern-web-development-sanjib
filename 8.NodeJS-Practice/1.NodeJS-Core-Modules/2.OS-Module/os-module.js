@@ -1,7 +1,6 @@
 const os = require("os");
 
 // Get the type os operating system
-
 console.log(os.type());
 
 // get platform
