@@ -33,6 +33,30 @@ app.use(morgan("combined"));
 //     next();
 //   });
 
+// -----Coding Challenge 1-----
+// Create a middleware that will log the request method, url, and the date and time of the request.
+
+// const codingChallengeLogger = (req, res, next) => {
+//   console.log(`${req.method} ${req.url} ${new Date().toISOString()}`);
+//   next();
+// };
+// app.use(codingChallengeLogger);
+
+// -----Coding Challenge 2-----
+// Create a middleware that will check the number of requests made to the server.
+// If the number of requests is greater than 10, return a response with a status code of 429. (To Many Requests)
+// If the number of requests is less than 10, call the next middleware.
+
+// let requestCountValue = 0;
+// const requestCountMiddleware = (req, res, next) => {
+//   requestCountValue++;
+//   if (requestCountValue > 10) {
+//     return res.status(429).json("Too Many Requests");
+//   }
+//   next();
+// };
+// app.use(requestCountMiddleware);
+
 // Protected route middleware
 const protected = (req, res, next) => {
   let userLoginDetails = {
