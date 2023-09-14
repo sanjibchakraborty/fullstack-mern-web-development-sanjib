@@ -28,11 +28,36 @@ const dbConnect = async () => {
     // console.log(student1);
 
     // Insert multiple document (Student)
-    const multipleStudents = await students.insertMany([
-      { name: "Peter", city: "Kumasi" },
-      { name: "Thomas", city: "Western" },
-    ]);
-    console.log(multipleStudents);
+    // const multipleStudents = await students.insertMany([
+    //   { name: "Peter", city: "Kumasi" },
+    //   { name: "Thomas", city: "Western" },
+    // ]);
+    // console.log(multipleStudents);
+
+    // Find all students
+    const allStudents = await students.find().toArray();
+    console.log(allStudents);
+
+    // Find a student by name 'Peter'
+    const foundStudent = await students.findOne({ name: "Peter" });
+    console.log(foundStudent);
+
+    // Find all students from Kumasi
+    const foundStudents = await students.find({ city: "Kumasi" }).toArray();
+    console.log(foundStudents);
+
+    // Update record
+    const updatedStudents = await students.updateOne(
+      { name: "Peter" },
+      {
+        $set: { name: "Peter", city: "Kolkata" },
+      }
+    );
+    console.log(updatedStudents);
+
+    // Delete a student
+    const deletedStudent = await students.deleteOne({ name: "Thomas" });
+    console.log(deletedStudent);
   } catch (error) {
     console.log(error);
   }
