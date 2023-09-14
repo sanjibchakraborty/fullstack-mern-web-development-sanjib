@@ -1,0 +1,20 @@
+{
+  "name": "4.rendering-assets-through-server",
+  "version": "1.0.0",
+  "description": "Rendering Assets Through Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Sanjib Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
