@@ -1,0 +1,19 @@
+{
+  "name": "1.mongo-crud",
+  "version": "1.0.0",
+  "description": "Mongo db crud operation",
+  "main": "mongodb.js",
+  "scripts": {
+    "start": "node mongodb.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Sanjib Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.1.0"
+  }
+}
