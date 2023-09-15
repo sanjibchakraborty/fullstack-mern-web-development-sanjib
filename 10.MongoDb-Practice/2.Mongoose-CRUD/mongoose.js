@@ -21,15 +21,15 @@ mongoose
 const Student = mongoose.model("Student", studentSchema);
 
 // Create student
-Student.create({
-  name: "Sanjib",
-  city: "India",
-  courses: ["Twi"],
-  isMarried: false,
-  age: 20,
-})
-  .then((student) => console.log(student))
-  .catch((err) => console.log(err));
+// Student.create({
+//   name: "Sanjib",
+//   city: "India",
+//   courses: ["Twi"],
+//   isMarried: false,
+//   age: 20,
+// })
+//   .then((student) => console.log(student))
+//   .catch((err) => console.log(err));
 
 // Find all students
 // Student.find()
