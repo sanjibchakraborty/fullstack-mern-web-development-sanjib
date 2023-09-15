@@ -3,33 +3,33 @@ const mongoose = require("mongoose");
 // Connect to mongoose
 mongoose
   .connect(
-    "mongodb+srv://sanju160984:Sanjumili1@mongodb-demo.yagqbqq.mongodb.net/?retryWrites=true"
+    "mongodb+srv://sanju160984:Sanjumili1@mongodb-demo.yagqbqq.mongodb.net/university?retryWrites=true&w=majorit"
   )
   .then(() => console.log("Db connected"))
   .catch((err) => console.log(err.message));
 
 // Define the schema: name, city, courses, isMarried, age
-const studentSchema = new mongoose.Schema({
-  name: String,
-  city: String,
-  courses: Array,
-  isMarried: Boolean,
-  age: Number,
-});
+// const studentSchema = new mongoose.Schema({
+//   name: String,
+//   city: String,
+//   courses: Array,
+//   isMarried: Boolean,
+//   age: Number,
+// });
 
 // Model
 const Student = mongoose.model("Student", studentSchema);
 
 // Create student
-// Student.create({
-//   name: "Sanjib",
-//   city: "India",
-//   courses: ["Twi"],
-//   isMarried: false,
-//   age: 20,
-// })
-//   .then((student) => console.log(student))
-//   .catch((err) => console.log(err));
+Student.create({
+  name: "Sanjib",
+  city: "India",
+  courses: ["Twi"],
+  isMarried: false,
+  age: 20,
+})
+  .then((student) => console.log(student))
+  .catch((err) => console.log(err));
 
 // Find all students
 // Student.find()
