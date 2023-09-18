@@ -12,5 +12,8 @@
     "js"
   ],
   "author": "Sanjib Chakraborty",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.1.0"
+  }
 }
