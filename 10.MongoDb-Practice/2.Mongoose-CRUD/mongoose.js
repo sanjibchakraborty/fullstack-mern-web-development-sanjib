@@ -18,7 +18,7 @@ mongoose
 // });
 
 // Model
-const Student = mongoose.model("Student", studentSchema);
+// const Student = mongoose.model("Student", studentSchema);
 
 // Create student
 // Student.create({
