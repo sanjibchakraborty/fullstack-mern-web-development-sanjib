@@ -12,5 +12,8 @@
     "js"
   ],
   "author": "Sanjib Chakraborty",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.5.2"
+  }
 }
