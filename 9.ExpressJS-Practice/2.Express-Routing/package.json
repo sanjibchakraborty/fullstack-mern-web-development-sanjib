@@ -12,11 +12,5 @@
     "js"
   ],
   "author": "i-Novotek Academy",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+  "license": "ISC"
 }
