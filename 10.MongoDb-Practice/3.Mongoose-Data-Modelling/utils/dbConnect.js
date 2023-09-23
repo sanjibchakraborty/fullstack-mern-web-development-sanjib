@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 module.exports = mongoose
   .connect(
-    "mongodb+srv://inovotek:Y8MtpWcYhID3JlwS@mongodb-demo.lqjq2rn.mongodb.net/data-modelling?retryWrites=true&w=majority"
+    "mongodb+srv://sanju160984:Sanjumili1@mongodb-demo.yagqbqq.mongodb.net/data-modelling?retryWrites=true"
   )
   .then(() => console.log("Db connected"))
-  .catch(err => console.log(err.message));
+  .catch((err) => console.log(err.message));
