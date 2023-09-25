@@ -1,5 +1,4 @@
 const express = require("express");
-const bcryptjs = require("bcryptjs");
 const path = require("path");
 const app = express();
 const port = 3000;
@@ -10,7 +9,7 @@ mongoose
     "mongodb+srv://inovotek:Y8MtpWcYhID3JlwS@mongodb-demo.lqjq2rn.mongodb.net/school?retryWrites=true&w=majority"
   )
   .then(() => console.log("Db connected"))
-  .catch((err) => console.log(err.message));
+  .catch(err => console.log(err.message));
 
 const userSchema = new mongoose.Schema({
   username: String,
@@ -22,11 +21,12 @@ const userSchema = new mongoose.Schema({
       "https://cdn.pixabay.com/photo/2015/08/05/04/25/people-875617_960_720.jpg",
   },
 });
-
 //model
+
 const User = mongoose.model("User", userSchema);
 
 //static files
+
 app.use(express.static(__dirname, +"/public"));
 // or
 // Virtual Path Prefix '/static'
@@ -34,7 +34,6 @@ app.use(express.static(__dirname, +"/public"));
 
 //view engine setup ejs
 app.set("view engine", "ejs");
-
 //pass json data
 app.use(express.json());
 
@@ -86,10 +85,10 @@ app.post("/register", (req, res) => {
     username: req.body.username,
     password: req.body.password,
   })
-    .then((user) => {
+    .then(user => {
       res.redirect("/login");
     })
-    .catch((err) => console.log(err));
+    .catch(err => console.log(err));
 });
 
 //profile
